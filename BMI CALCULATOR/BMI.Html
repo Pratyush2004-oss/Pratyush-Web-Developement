@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+<body>
+    <div id="Box">
+        <h1 id="heading">BMI Calculator</h1><br><br>
+        <label for="">Height in CM : </label>
+        <input type="text" class="inputs"><br><br>
+        <label for="">Weight in KG : </label>
+        <input type="text" class="inputs"><br><br>
+        <select class="selects" onchange="">
+            <option disabled selected value>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select ><br><br>
+        <label for="">BMI Result : </label>
+        <input type="text" class="inputs" readonly><br><br>
+        <button id="Submit" onclick="Calculate(value)">Calculate</button><br><br>
+        <h4 id="result"></h4>
+    </div>
+</body>
+
+<script>
+    let b = document.querySelector("select")
+    console.log(b.value);
+    let Calculate=(value)=>{
+        let a = document.querySelectorAll(".inputs");
+        a[2].value = parseFloat(a[1].value) * 10000 / (parseFloat(a[0].value)*parseFloat(a[0].value))
+        if(b.value == "male"){
+            if(a[2].value < 19){
+                document.querySelector("#result").innerText = ("Male is Under Weight");
+            }
+            if(a[2].value >= 19 && a[2].value < 25){
+                document.querySelector("#result").innerText = ("Male is Normal Weight");
+            }
+            if(a[2].value >= 25){
+                document.querySelector("#result").innerText = ("Male is Over Weight")
+            }
+        }
+        if(b.value == "female"){
+            if(a[2].value < 18.5){
+                document.querySelector("#result").innerText = ("Female is Under Weight");
+            }
+            if(a[2].value >= 18.5 && a[2].value < 24.5){
+                document.querySelector("#result").innerText = ("Female is Normal Weight");
+            }
+            if(a[2].value >= 24.5){
+                document.querySelector("#result").innerText = ("Female is Over Weight")
+            }
+        }
+    }
+</script>
+
+</html>
