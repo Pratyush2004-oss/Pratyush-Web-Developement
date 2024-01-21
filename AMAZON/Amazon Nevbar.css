@@ -4,10 +4,12 @@
     color: white;
     font-size: 14px;
 }
+
 .main{
     overflow-x: scroll;
-    background-color: #131921;
+    background-color: #131921;    
 }
+
 #navbar{
     height: 55px;
     background-color: #131921;
@@ -15,7 +17,9 @@
     display: flex;
     align-items: center;
     padding: 0px 10px;
+    justify-content: space-between;
 }
+
 .Navbar1{
     display: flex;
     font-size: 18px;
@@ -23,43 +27,63 @@
     margin: 5px;
     padding: 0px 5px;
 }
+
 .Navbar1:hover{
     border: 2px white solid;
 }
+
 .ri-map-pin-line{
     margin: 20px 5px 20px 10px;
     padding: 0px 0px;
     font-size: 22px;
 }
+
 #Address{
     margin: 10px 5px;
     width: 200px;
 }
+
 #Search-Menu{
     display: flex;
+    height: 40px;
+    margin: 5px 5px;
 }
+
+#Search-Menu:hover{
+    border: 4px solid orange;
+    border-radius: 5px;
+}
+
 #Menu-Options{
-    padding: 10px 25px;
+    padding: 10px 20px;
     background-color: rgb(200, 199, 199);
     color: rgb(66, 64, 64);
-    height: 42px;
+    height: 40px;
+    width: 80px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin: 6px -1px 5px 10px;
+    border: 0px;
+    margin-right: -1px;
+    z-index: 2;
 }
+
 #Menu-Options:hover{
     color: black;
     background-color: rgb(174, 172, 172);
 }
+
 #Search{
-    margin-top: 5px;
     height: 40px;
     color: #131921;
     width: 450px;
     background-color: aliceblue;
     border: #131921 solid 0px;
-    margin-top: 7px;
     background-color: whitesmoke;
+    border: 0px;
+}
+
+#Search:hover{
+    border-color: white;
 }
 .ri-search-line{
     color: #131921;
@@ -68,34 +92,44 @@
     padding: 4.5px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    margin: 7px 15px 2px -1px;
+    margin-left: -1px;
     height: 31px;
+    width: 30px;
+    text-align: center;
 }
+
 #flag{
     margin-top: 10px;
     margin-right: -3px;
 }
+
 #Language{
     height: 40px;
     background-color: #131921;
-    padding: 10px 5px;
+    margin: 18px 5px;
     border-width: 0px;
-    height: 50px;
-    
+    height: 30px;
+    width: 40px;
 }
+
 #SignIn{
     height: 40px;
     background-color: #131921;
-    /* padding: 10px 5px; */
-    margin: 5px 15px;
+    margin: 5px 10px;
     border-width: 0px;
     height: 45px;
-    width: 100px;
+    width: 120px;
 }
+
+.ri-arrow-down-s-fill{
+    color: white;
+}
+
 #Return{
     margin: 3px;
     width: 60px;
 }
+
 .ri-shopping-cart-line{
     margin: 10px;
     padding: 0px 0px;
