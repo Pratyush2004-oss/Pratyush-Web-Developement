@@ -14,7 +14,8 @@
     justify-content: space-between;
 }
 #buttons{
-    justify-content: space-evenly;
+    justify-content: space-between;
+    display: block;
 }
 #ExamSchedule{
     background-color: red;
