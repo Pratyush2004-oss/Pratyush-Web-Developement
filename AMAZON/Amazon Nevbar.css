@@ -63,8 +63,6 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: 0px;
-    margin-right: -1px;
-    z-index: 2;
 }
 
 #Menu-Options:hover{
@@ -97,7 +95,6 @@
     padding: 4.5px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    margin-left: -1px;
     height: 31px;
     width: 30px;
     text-align: center;
@@ -105,7 +102,6 @@
 
 #flag{
     margin-top: 10px;
-    margin-right: -3px;
 }
 
 #Language{
