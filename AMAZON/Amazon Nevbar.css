@@ -55,11 +55,11 @@
 }
 
 #Menu-Options{
-    padding: 10px 20px;
+    padding: 10px 20px 10px 3px;
     background-color: rgb(200, 199, 199);
     color: rgb(66, 64, 64);
     height: 40px;
-    width: 80px;
+    max-width: 120px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: 0px;
@@ -70,6 +70,11 @@
 #Menu-Options:hover{
     color: black;
     background-color: rgb(174, 172, 172);
+}
+
+.Opt{
+    background-color: white;
+    color: black;
 }
 
 #Search{
