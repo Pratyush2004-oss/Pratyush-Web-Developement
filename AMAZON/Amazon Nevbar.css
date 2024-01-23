@@ -5,18 +5,29 @@
     font-size: 14px;
 }
 
-.main{
+main{
+    width: max-content;
+    height: 100%;
     overflow-x: scroll;
-    background-color: #131921;    
+    /* background-color: #131921;   */
+}
+
+.Navmain{
+    overflow-x: scroll;
+    background-color: #131921;  
+}
+
+.Navmain::-webkit-scrollbar{
+    background-color: transparent;
 }
 
 #navbar{
     height: 55px;
+    width: 100%;
     background-color: #131921;
-    border: 3px #131921 solid;
+    border: 2px #131921 solid;
     display: flex;
     align-items: center;
-    padding: 0px 10px;
     justify-content: space-between;
 }
 
@@ -88,6 +99,7 @@
 #Search:hover{
     border-color: white;
 }
+
 .ri-search-line{
     color: #131921;
     background-color: orange;
@@ -135,4 +147,52 @@
     margin: 10px;
     padding: 0px 0px;
     font-size: 22px;
+}
+
+.Navbar2{
+    margin-top: 5px;
+    display: flex;
+    width: max-content;
+    background-color: #232f3e;
+    align-items: center;
+    height: 40px;
+    
+}
+
+.BTN{
+    align-items: center;
+    background-color: #232f3e;
+    border: #232f3e solid ;
+    font-family:Arial, Helvetica, sans-serif;
+    padding : 8px 12px;
+    width: max-content;
+}
+
+.BTN:hover{
+    border: 2px solid white;
+}
+
+#Navbar2-left{
+    display: flex;
+    margin-left: 10px;
+}
+
+#Navbar2-filler{
+    display: flex;
+
+}
+
+#Navbar2-right{
+    display: flex;
+    align-self: end;
+    margin-left: 45px;
+}
+
+#Download{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(196, 193, 193);
+}
+#AMZ-Logo{
+    margin: -10px 0px -8px -8px;
 }
