@@ -15,6 +15,7 @@ main{
 .Navmain{
     overflow-x: scroll;
     background-color: #131921;  
+    justify-content: space-between;
 }
 
 .Navmain::-webkit-scrollbar{
@@ -28,7 +29,11 @@ main{
     border: 2px #131921 solid;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
+}
+
+.navbar-left{
+    display: flex;
 }
 
 .Navbar1{
@@ -50,14 +55,20 @@ main{
 }
 
 #Address{
+    font-size: 16px;
     margin: 10px 5px;
-    width: 200px;
+    width: max-content;
+}
+
+.navbar-filler{
+    display: flex;
+    width: 100%;
 }
 
 #Search-Menu{
     display: flex;
     height: 40px;
-    margin: 5px 5px;
+    width: 100%;
 }
 
 #Search-Menu:hover{
@@ -70,10 +81,10 @@ main{
     background-color: rgb(200, 199, 199);
     color: rgb(66, 64, 64);
     height: 40px;
-    max-width: 120px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: 0px;
+    text-align: center;
 }
 
 #Menu-Options:hover{
@@ -89,15 +100,11 @@ main{
 #Search{
     height: 40px;
     color: #131921;
-    width: 450px;
     background-color: aliceblue;
     border: #131921 solid 0px;
     background-color: whitesmoke;
     border: 0px;
-}
-
-#Search:hover{
-    border-color: white;
+    width: 200%;
 }
 
 .ri-search-line{
@@ -110,6 +117,10 @@ main{
     height: 31px;
     width: 30px;
     text-align: center;
+}
+
+.navbar-right{
+    display: flex;
 }
 
 #flag{
@@ -152,7 +163,7 @@ main{
 .Navbar2{
     margin-top: 5px;
     display: flex;
-    width: max-content;
+    width: 100%;
     background-color: #232f3e;
     align-items: center;
     height: 40px;
@@ -185,14 +196,17 @@ main{
 #Navbar2-right{
     display: flex;
     align-self: end;
-    margin-left: 45px;
+    margin-left: 40px;
+    margin-right: 5px;
 }
 
 #Download{
     font-size: 16px;
     font-weight: bold;
     color: rgb(196, 193, 193);
+    
 }
+
 #AMZ-Logo{
-    margin: -10px 0px -8px -8px;
+    margin: -7px 0px -8px -8px;
 }

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Navigation-Bar{
+    padding: .6%;
+    background-color: #131921;
+    color: white;
+    height:60px;
+    overflow-x:scroll;
+}
+.NavBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 60px;
+}
+#NavBar-Left{
+    display: flex;
+    width: 20%;
+    font-size: 11px;
+}
+.Blink{
+    display: flex;
+}
+.Blink:hover{
+    border: 2px white solid;
+}
+.ri-map-pin-line{
+    font-size: 18px;
+    margin: 8px 5px 0px 0px;
+}
+
+#Address{
+    display: flex;
+    margin: 5px;
+}
+
+#NavBar-Filler{
+    display: flex;
+    width: 55%;
+}
+
+#Menu-Options{
+    background-color: rgb(200, 199, 199);
+    color: rgb(66, 64, 64);
+    width: 12%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0px;
+}
+
+#Menu-Options:hover{
+    color: black;
+    background-color: rgb(174, 172, 172);
+}
+
+.Opt{
+    background-color: white;
+    color: black;
+}
+
+#Search{
+    color: #131921;
+    width: 80%;
+    background-color: aliceblue;
+    border: #131921 solid 0px;
+    background-color: whitesmoke;
+    border: 0px;
+}
+
+#Search:hover{
+    border-color: white;
+}
+
+.ri-search-line{
+    color: #131921;
+    background-color: orange;
+    font-size: 23px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: center;
+    width: 4%;
+    padding-top: 0.5%;
+}
+#NavBar-Right{
+    width: 25%;
+    display: flex;
+}
+#flag{
+    margin: 5px 0px 0px 0px;
+}
+#Language{
+    margin: 8px 8px;
+}
+
