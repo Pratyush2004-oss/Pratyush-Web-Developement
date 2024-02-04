@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<style>
+    .box{
+        background-color: blue;
+        color: white;
+        display: none;
+    }
+    @media (max-width:500px){
+        #box-1{
+            display: block;
+            background-color: blue;
+            color: black;
+        }
+    }
+    @media (max-width:800px) and (min-width:501px){
+        #box-2{
+            display: block;
+            background-color: greenyellow;
+            color: black;
+        }
+    }
+    @media (max-width:1000px) and (min-width:801px){
+        #box-3{
+            display: block;
+            background-color: green;
+            color: black;
+        }
+    }
+    @media (max-width:1200px) and (min-width:1001px){
+        #box-4{
+            display: block;
+            background-color: yellow;
+            color: black;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="box" id="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quasi. Enim, architecto animi! Cum dolorum repellendus fuga rem impedit, repellat cumque iusto rerum quaerat provident reiciendis officia cupiditate. Cumque fugiat exercitationem soluta nostrum cupiditate architecto veniam dolores commodi, quisquam magni iste tenetur, debitis ex voluptates perferendis, earum totam error! Reiciendis.</div>
+    <div class="box" id="box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aspernatur quidem voluptates maxime doloremque tenetur iure optio aliquid minima. Impedit, temporibus. Dolorem ut saepe aperiam repellat quaerat ea in assumenda quis recusandae dolorum aspernatur expedita exercitationem quam doloribus cupiditate officia cumque molestias neque fugit dolore amet nostrum, iste quae fugiat.</div>
+    <div class="box" id="box-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet numquam totam tempora veritatis fugit quisquam incidunt, sequi aliquid fugiat voluptate hic neque possimus facere officiis assumenda ipsa error nam animi ratione! Autem impedit aspernatur, recusandae exercitationem, magnam amet explicabo veniam veritatis consequuntur cum quas vel aperiam itaque fugit, blanditiis id!</div>
+    <div class="box" id="box-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ad quae quisquam impedit debitis vitae minus molestiae qui temporibus perspiciatis non ea aspernatur quibusdam adipisci accusamus autem, cupiditate explicabo eligendi in eaque eius. Amet quidem culpa blanditiis quae sit. Doloribus, magnam. Officia vel ut, libero doloremque aut qui exercitationem ex.</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+</script>
+</html>
