@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness GYM</title>
     <link rel="stylesheet" href="./CSS/Home-Page-style.css">
 </head>
+
 <body>
 
     <!-- Header of the Webpage -->
     <header class="header">
         <!--Left box for Logo-->
-        <div class="left">  
+        <div class="left">
             <img src="./Images/dumell.jpeg" alt="">
             <div>Fitness GYM</div>
         </div>
 
         <!--Mid Box for navigation-->
-        <div class="mid">   
+        <div class="mid">
             <div class="navbar">
                 <li><a href="./GYM.html" class="active">Home</a></li>
                 <li><a href="#">About Us</a></li>
@@ -25,13 +28,27 @@
                 <li><a href="#">Contact Us</a></li>
             </div>
         </div>
-
+        <div class="menu"><i class="ri-menu-line"></i></div>
         <!--Right Box for buttons-->
-        <div class="right"> 
+        <div class="right">
             <button class="btn">Call Us Now</button>
             <button class="btn">E-mail Us</button>
         </div>
+
     </header>
+
+    <div class="sidebar">
+        <div class="ance">
+            <div class="close"><i class="ri-close-fill"></i></div>
+            <a href="./GYM.html" class="active side">Home</a>
+            <a href="#" class="side">About Us</a>
+            <a href="#" class="side">Fitness Calculator</a>
+            <a href="#" class="side">Contact Us</a>
+            <a href="#" class="btn side">Call Us Now</a>
+            <a href="#" class="btn side">E-mail Us</a>
+        </div>
+    </div>
+
 
     <div class="container">
         <h1>Join The Best GYM of Pithragarh Now</h1>
@@ -55,10 +72,13 @@
                     <option value="Female">Female</option>
                 </select>
             </div>
-                <button class="btn">Submit</button>
+            <button class="btn">Submit</button>
         </form>
     </div>
 
 
 </body>
+
+<script src="./JAVA-Script/Home-Page.js"></script>
+
 </html>

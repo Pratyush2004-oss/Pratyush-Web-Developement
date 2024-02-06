@@ -41,7 +41,7 @@ body{
     display: block;
     width: 40%;
     text-align: center;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 
@@ -76,27 +76,90 @@ body{
     margin: 20px 0;
 }
 
-.header .right .btn{
-    margin: 0 5px;
+.header .right .btn, .sidebar .ance .btn{
+    margin: 5px;
     color: white;
     background-color: black;
-    padding: 15px 10px;
+    padding: 10px;
     font-size: 17px;
     border: 2px black solid;
     cursor: pointer;
 }
 
-.header .right .btn:hover{
+.header .right .btn:hover, .sidebar .ance .btn:hover{
     background-color: rgb(60, 60, 60);
+}
+
+.header .menu{
+    width: 100%;
+    display: none;
+    justify-content : end;
+    cursor: pointer;
+}
+
+.header .menu .ri-menu-line , .sidebar .ance .close .ri-close-fill{
+    font-size: 60px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+@media(max-width: 1215px){
+    .header .mid, .header .right{
+        display: none;
+    }
+    .container{
+        margin: 150px
+    }
+    .container h1{
+        font-size: 11px;
+    }
+    .header .menu{
+        display: flex;
+    }
+}
+
+.sidebar{
+    padding-top: 5%;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0%;
+    top: 0%;
+    width: 200px;
+    height: max-content;
+    background-color: black;
+    border-radius: 10px;
+    display: none;
+}
+
+.sidebar .ance{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+}
+.sidebar .ance .side{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.sidebar .side{
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
 }
 
 .container{
     display: block;
     border: 2px solid wheat;
-    margin: 80px;
+    margin: 80px auto;
     padding: 75px;
     border-radius: 28px;
-    width: 45%;
+    width: 40%;
 }
 
 .container h1{

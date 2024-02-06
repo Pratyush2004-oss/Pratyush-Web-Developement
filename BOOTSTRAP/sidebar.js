@@ -10,5 +10,4 @@ var close=document.querySelector(".icn");
 close.addEventListener("click",function(){
     sidebar.style.display="none"
     ancer.style.opacity=1
-    
 })
