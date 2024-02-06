@@ -97,13 +97,13 @@ body{
     cursor: pointer;
 }
 
-.header .menu .ri-menu-line , .sidebar .ance .close .ri-close-fill{
+.header .menu .ri-menu-line{
     font-size: 60px;
     padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    text-align: end;
 }
+
+
 
 
 @media(max-width: 1215px){
@@ -151,6 +151,13 @@ body{
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+}
+.sidebar .ance .close .ri-close-fill{
+    font-size: 60px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .container{
