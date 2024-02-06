@@ -103,7 +103,20 @@ body{
     text-align: end;
 }
 
-
+/* @media(min-width:500px) and (max-width:1214px){
+    .header .right{
+        display: none;
+    }
+    .header .menu{
+        display: flex;
+    }
+    .header{
+        justify-content: center;
+    }
+    .sidebar .anve .hide{
+        display: none;
+    }
+} */
 
 
 @media(max-width: 1215px){
