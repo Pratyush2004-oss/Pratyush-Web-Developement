@@ -60,7 +60,6 @@
                 weatherIcon.src="imagesWeather/rainy.png"
             }
             else if (data.weather[0].main=="Clear"){
-
                 weatherIcon.src="imagesWeather/sunny.png"
             }
             else if (data.weather[0].main=="Rain"){
@@ -68,7 +67,8 @@
             }            
         }
         searchBtn.addEventListener("click",()=>{
-            checkweather(searchBox.value);}
+            checkweather(searchBox.value);
+        }
         )
         
 
