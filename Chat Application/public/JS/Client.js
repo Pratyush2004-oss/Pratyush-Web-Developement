@@ -19,7 +19,7 @@ function sendMessage(message) {
     }
     
     // Append 
-    if(msg.message !== ''){
+    if(msg.message){
         appendMessage(msg, 'outgoing')
         textarea.value = ''
         scrollToBottom()
@@ -45,8 +45,10 @@ function appendMessage(msg, type) {
 
 // Recieve messages 
 socket.on('message', (msg) => {
-    appendMessage(msg, 'incoming')
-    scrollToBottom()
+    if(msg.message){
+        appendMessage(msg, 'incoming')
+        scrollToBottom()
+    }
 })
 
 function scrollToBottom() {
